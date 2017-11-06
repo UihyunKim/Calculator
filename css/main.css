@@ -1,0 +1,186 @@
+html, body {
+    height: 100%
+}
+
+body {
+    background-color: #8C6DDA;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'PT Mono', monospace;
+}
+
+.unselectable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+
+/* This class ".calculator" is a layer needed only for shade */
+
+.calculator {
+    background-color: white;
+    width: 270px;
+    height: 470px;
+    margin-top: 100px;
+    display: flex;
+    -webkit-flex-flow: column;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    align-items: center;
+    /* shadow */
+    -moz-box-shadow: 0px 0px 70px 3px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 70px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 70px 3px rgba(0, 0, 0, 0.75);
+}
+
+.indicator {
+    background-color: #FFD257;
+    width: 270px;
+    height: 100px;
+}
+
+.indicator ul {
+    text-align: center;
+}
+
+
+/* result & reset row */
+
+.indicator ul ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.indicator>ul>li:nth-child(1) {
+    color: white;
+    margin-top: 13px;
+    margin-bottom: 5px;
+}
+
+
+/* history pannel*/
+
+.history {
+    padding: 0 10px;
+    border-radius: 25px;
+    background-color: #ECC351;
+}
+
+
+/* result pannel */
+
+
+/*.indicator ul ul li {
+}*/
+
+.indicator ul ul li:nth-child(1) {
+    margin-top: 10px;
+    font-size: 1.3em;
+    width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* reset button */
+
+.indicator ul ul li:nth-child(2) {
+    color: white;
+    font-size: 0.5em;
+    position: absolute;
+    right: 10px;
+    border-radius: 50%;
+    background: #ECC351;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.operator {
+    background-color: #192F45;
+    width: 270px;
+    height: 70px;
+}
+
+.operator>ul {
+    height: 40px;
+    width: 250px;
+    margin: 15px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background color rounding */
+    border-radius: 25px;
+    background: #44576D;
+    position: relative;
+}
+
+.operator li {
+    color: #E1E4E7;
+    font-size: 1.9em;
+    width: 40px;
+    text-align: center;
+    height: 40px;
+    margin: 0 2.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.numpad {
+    background-color: #192F45;
+    width: 270px;
+    height: 300px;
+}
+
+.numpad ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.numpad li {
+    font-size: 1.8em;
+    width: 90px;
+    height: 75px;
+    color: #B1BBCA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.numpad li:last-child {
+    font-size: 1em;
+}
+
+
+/* function */
+
+.operator .yellowed {
+    border-radius: 25px;
+    background: #FFD257;
+    width: 40px;
+    height: 40px;
+    color: #3D4C4D;
+}
+
+.numpad .lighted {
+    background: #44576D;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!-- import sources -->
+    <script src="https://use.fontawesome.com/1a92bb96eb.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="indicator">
+            <ul>
+                <li><span class="history">0</span></li>
+                <li>
+                    <!-- result & reset row -->
+                    <ul>
+                        <li class="currentInput">0</li>
+                        <li class="reset">x</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="operator unselectable">
+            <ul>
+                <li>+</li>
+                <li>−</li>
+                <li class="yellowed">=</li>
+                <li>×</li>
+                <li>÷</li>
+            </ul>
+        </div>
+
+        <div class="numpad unselectable">
+            <ul>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>.</li>
+                <li>0</li>
+                <li>⌫</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- import scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
