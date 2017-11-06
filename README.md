@@ -1,6 +1,6 @@
 # Calculator
 Basic calcualtor
 * Plus
-* minus
-* multiply
-* divide
+* Minus
+* Multiply
+* Divide
